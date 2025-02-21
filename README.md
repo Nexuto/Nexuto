@@ -1,7 +1,7 @@
 # AI Node Schema Documentation
 
 ## Table of Contents
-- [Overview](node_schema_spec.md#overview)
+- [Overview](NodeSchemaSpec.md#overview)
 - [Node Schema](node_schema_spec.md#node-schema)
   - [Fields Explanation](node_schema_spec.md#fields-explanation)
 - [Connection Schema](node_schema_spec.md#connection-schema)
