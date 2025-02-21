@@ -10,6 +10,7 @@ Each AI node should declare its inputs, outputs, and connection rules using the 
 
 ```json
 {
+  "node_id": "text_summarizer_001",
   "name": "Node Name",
   "description": "Summarizes what the Node does",
   "category": "NLP",
@@ -26,18 +27,12 @@ Each AI node should declare its inputs, outputs, and connection rules using the 
       "type": "text",
     }
   ],
-  "settings": {
-    "max_length": {
-      "type": "integer",
-      "default": 100,
-      "min": 10,
-      "max": 500
-    }
-  }
 }
 ```
 
 ### Fields Explanation
+
+- **`node_id`**: Unique id for the node.
 
 - **`name`**: Display name of the node.
 
@@ -65,11 +60,9 @@ To enable node connectivity, the platform should define connections as follows:
   "connection_id": "conn_789",
   "from": {
     "node_id": "text_summarizer_001",
-    "socket_id": "output_1"
   },
   "to": {
     "node_id": "sentiment_analyzer_002",
-    "socket_id": "input_1"
   }
 }
 ```
@@ -85,6 +78,3 @@ To enable node connectivity, the platform should define connections as follows:
 - The UI should enforce **real-time validation** of connections.
 - The execution order should follow **dependency graphs**.
 - Nodes should support **parallel processing where applicable**.
-
-This schema ensures an intuitive and scalable AI node management system. 🚀
-
