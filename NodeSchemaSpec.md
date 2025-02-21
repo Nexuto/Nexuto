@@ -16,6 +16,7 @@ Each AI node should declare its inputs, outputs, and connection rules using the 
   "category": "NLP",
   "inputs": [
     {
+      "input_id": "input_identifier",
       "name": "Text Input",
       "type": "text",
       "required": true
@@ -23,6 +24,7 @@ Each AI node should declare its inputs, outputs, and connection rules using the 
   ],
   "outputs": [
     {
+      "output_id": "output_identifier",
       "name": "Text Input",
       "type": "text",
     }
@@ -32,24 +34,19 @@ Each AI node should declare its inputs, outputs, and connection rules using the 
 
 ### Fields Explanation
 
-- **`node_id`**: Unique id for the node.
-
+- **`node_id`**: Unique identifier for the node.
 - **`name`**: Display name of the node.
-
 - **`description`**: Brief explanation of the node’s function.
-
-- **`category`**: Categorizes nodes (e.g., NLP, Image Processing, Audio Analysis).
-
-- **`inputs`**: Defines acceptable inputs:
-
-  - **`name`**: Display name for UI.
-  - **`type`**: Data type (`text`, `image`, `audio`, etc.).
+- **`category`**: Node category (e.g., NLP, Image Processing).
+- **`inputs`**: Defines the node's required inputs:
+  - **`input_id`**: Unique identifier for the input (from the JSON).
+  - **`name`**: Input display name.
+  - **`type`**: Expected data type (e.g., text, image).
   - **`required`**: Specifies if the input is mandatory.
-
-- **`outputs`**: Defines the node’s outputs:
-
-  - **`name`**: Display name for UI.
-  - **`type`**: Data type (text, image, audio, etc.).
+- **`outputs`**: Defines the node's outputs:
+  - **`output_id`**: Unique identifier for the output (from the JSON).
+  - **`name`**: Output display name.
+  - **`type`**: Output data type (e.g., text, image).
 
 ## Connection Schema
 
