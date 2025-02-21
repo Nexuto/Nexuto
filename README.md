@@ -2,14 +2,14 @@
 
 ## Table of Contents
 - [Overview](NodeSchemaSpec.md#overview)
-- [Node Schema](node_schema_spec.md#node-schema)
-  - [Fields Explanation](node_schema_spec.md#fields-explanation)
-- [Connection Schema](node_schema_spec.md#connection-schema)
-  - [Connection Rules](node_schema_spec.md#connection-rules)
-- [Implementation Considerations](node_schema_spec.md#implementation-considerations)
+- [Node Schema](NodeSchemaSpec.md#node-schema)
+  - [Fields Explanation](NodeSchemaSpec.md#fields-explanation)
+- [Connection Schema](NodeSchemaSpec.md#connection-schema)
+  - [Connection Rules](NodeSchemaSpec.md#connection-rules)
+- [Implementation Considerations](NodeSchemaSpec.md#implementation-considerations)
 
 ## Description
 This repository contains the specification for AI nodes in a modular, drag-and-drop AI platform. The schema defines how nodes interact, ensuring seamless integration within the system.
 
-Refer to the [Node Schema Specification](node_schema_spec.md) for details on how to structure and connect AI nodes.
+Refer to the [Node Schema Specification](NodeSchemaSpec.md) for details on how to structure and connect AI nodes.
 
